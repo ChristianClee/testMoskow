@@ -1,0 +1,16 @@
+version: '3'
+
+services: 
+  front:
+    image: nginx:latest
+    restart: always
+    ports: 
+      - "80:80"
+    container_name: nginx-front
+    volumes:
+      - ./build:/usr/share/nginx/html 
+
+
+
+
+
